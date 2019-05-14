@@ -1,0 +1,217 @@
+/* 水平線風格 */
+hr
+{
+	height:0px;
+	border:none;
+	border-top: 1px solid rgb(255, 255, 255);
+	box-shadow:0px 0px 4px 0px rgba(255, 255, 255, .5);
+}
+
+/* div容器 */
+#container {
+	position: relative;
+	min-width:1024px;
+	min-height:768px;
+	width:100%;
+	background-color: #3a3a3a;
+	margin: 10px;
+	border: 1px solid #2c2c2c;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .4);
+	-webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .4);
+}
+
+/* 菜單 */
+#menu {
+	border-bottom: 1px solid #2c2c2c;
+}
+
+/* 菜單連接的樣式 */
+#menu a {
+	font-weight: normal;
+	text-decoration: none;
+	color: white;
+}
+
+/* 主頁面 */
+#body {
+	padding-top:20px;
+	margin: 0 15px 0 15px;
+}
+
+/* 網頁尾端 */
+#footer {
+	position: absolute;
+	color: #b4b4b4;
+	text-align: right;
+	font-size: 14px;
+	border-top: 1px solid #2c2c2c;
+	line-height: 32px;
+	padding: 0 10px 0 10px;
+	margin: auto;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+/* 選單項目 */
+.menu_item {	
+	position:relative;
+	font-size:18px;	
+	display:inline-block;
+	width:120px;
+	text-align:center;
+	padding: 16px 0 16px 0;
+	border-right: 1px solid #2c2c2c;
+	margin-right:-4px;
+	margin-block-start:0px;
+	transition-duration:.2s;
+	-moz-transition-duration: .2s;
+	-webkit-transition-duration: .2s;
+}
+
+/* 選單項目:滑鼠停留 */
+.menu_item:hover {
+	display:inline-block;
+	background-color:#444444;
+	transition-duration:.2s;
+	-moz-transition-duration: .2s;
+	-webkit-transition-duration: .2s;
+}
+
+/* 選單項目的子選單 */
+.menu_item > ul {
+	display:none;
+	position: absolute;
+	padding:0;
+	width:120px;
+	margin: 16px 0 0 -1px;
+	list-style: none;
+	background-color: #3a3a3a;
+	border-left: 1px solid  #2a2a2a;
+	border-right: 1px solid  #2a2a2a;
+	border-bottom: 1px solid  #2a2a2a;
+	z-index: 1;
+}
+
+/* 滑鼠停留選單項目後的子選單 */
+.menu_item:hover > ul {
+	display:block;
+}
+
+/* 子選單的項目 */
+.menu_item > ul li {
+	display:block;
+	text-align:left;
+	font-size:16px;
+	padding: 5px 0 5px 10px;
+	background-color: #3a3a3a;
+	border-top: 1px solid  #2a2a2a;
+}
+
+/* 子選單的項目選擇 */
+.menu_item > ul li:hover {
+	background-color:#444444;
+	transition-duration:.2s;
+	-moz-transition-duration: .2s;
+	-webkit-transition-duration: .2s;
+}
+
+/* 輸入方塊 */
+.inputbox {
+	outline:none;
+	color:white;
+	font-size:16px;
+	font-family: inherit;
+	background-color: #414141;
+	border:1px solid  #2a2a2a;
+	padding: 5px;
+	box-shadow:0 0 6px 0 rgba(24, 24, 24, 0.333) inset;
+	-moz-box-shadow:0 0 6px 0 rgba(24, 24, 24, 0.333) inset;
+	-webkit-box-shadow:0 0 6px 0 rgba(24, 24, 24, 0.333) inset;
+}
+
+/* 輸入方塊:聚焦 */
+.inputbox:focus {
+	box-shadow:0 0 6px 0 rgba(0, 140, 255, 0.376) inset;
+	-moz-box-shadow:0 0 6px 0 rgba(0, 140, 255, 0.376) inset;
+	-webkit-box-shadow:0 0 6px 0 rgba(0, 140, 255, 0.376) inset;
+}
+
+/* 輸入按鈕:聚焦 */
+.inputbutton {
+	outline:none;
+	color:white;
+	font-size:16px;
+	font-family: inherit;
+	background-color: #414141;
+	border:1px solid  #2a2a2a;
+	width:100px;
+	margin-left: 5px;
+	padding: 5px;
+}
+
+/* 輸入按鈕:選擇 */
+.inputbutton:hover {
+	border-color:rgba(0, 140, 255, 0.376);
+}
+
+/* 輸入按鈕:點擊 */
+.inputbutton:active {
+	border-color:rgba(0, 140, 255, 0.376);
+	background-color:  #2a2a2a;
+	border-color:1px solid  #414141;
+}
+
+/* 表格方塊 */
+.tablebox tr td
+{
+	color:white;
+	background-color:#2e2e2e;
+	padding: 5px 0 5px 0;
+	border: 1px solid #1f1f1f;
+	transition-duration:.1s;
+	-moz-transition-duration: .1s;
+	-webkit-transition-duration: .1s;
+}
+
+/* 表格方塊:標題行 */
+.tablebox tr:first-child td
+{
+	background-color:#363636;
+}
+
+/* 表格方塊:選擇行 */
+.tablebox tr:hover td
+{
+	background-color:#414141;
+	transition-duration:.1s;
+	-moz-transition-duration: .1s;
+	-webkit-transition-duration: .1s;
+}
+
+/* 其他頁面設定 */
+/* 反白顏色 */
+::selection { 
+	background-color: #5c5c5c; 
+	color: white; 
+}
+::-moz-selection { 
+	background-color: #5c5c5c; 
+	color: white; 
+}
+
+/* 頁面背景 */
+body {
+	background-color: #4b4b4b;
+	margin: 40px;
+	font-size: 16px;
+	font-family: 微軟正黑體, normal Helvetica, Arial, sans-serif;
+	color: #FFF;
+}
+
+/* 超連結 */
+a:link,
+a:visited {
+	color: #ffab4a;
+}
